@@ -1,25 +1,19 @@
 import React, {Component} from "react";
-import {BrowserRouter, Route} from "react-router-dom";
+import {Switch, Route} from "react-router-dom";
 
-import "./App.css";
-import Homepage from "./pages/Homepage";
+import "./App.scss";
+import ProductList from "./components/ProductList";
+import ProductDetail from "./components/ProductDetail";
 
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
-        <div>
-          <Route
-            exact={true}
-            path="/"
-            render={() => (
-              <div className="App">
-                <Homepage />
-              </div>
-            )}
-          />
-        </div>
-      </BrowserRouter>
+      <React.Fragment>
+        <Switch>
+          <Route exact path="/" component={ProductList} />
+          <Route exact path="/detail" component={ProductDetail} />
+        </Switch>
+      </React.Fragment>
     );
   }
 }
