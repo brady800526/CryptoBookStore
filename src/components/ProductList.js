@@ -9,7 +9,7 @@ export default function ProductList() {
       {/* Floating User Info */}
       <div
         style={{top: "25px", right: "25px", width: "166px", height: "186px"}}
-        className="position-absolute bg-white container rounded p-3"
+        className="position-absolute bg-white container rounded p-3 shadow"
       >
         <div style={{height: "75px"}} className="row position-relative mx-auto">
           <img

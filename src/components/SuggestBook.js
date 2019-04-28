@@ -17,16 +17,14 @@ export default function SuggestBook() {
           </h5>
         </div>
         <div>
-          <p style={{fontSize: "1rem"}}>
-            <Star />
-            <Star />
-            <Star />
-            <Star />
-            <MuteStar />
-            <small style={{fontSize: "12px"}} className="text-muted ml-2">
-              3.9 (62 ratings)
-            </small>
-          </p>
+          <Star />
+          <Star />
+          <Star />
+          <Star />
+          <MuteStar />
+          <small style={{fontSize: "12px"}} className="text-muted ml-2">
+            3.9 (62 ratings)
+          </small>
         </div>
       </div>
     </div>
