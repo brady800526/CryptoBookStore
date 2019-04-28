@@ -4,10 +4,10 @@ export default function ProductDetail() {
   return (
     <React.Fragment>
 
-      <div className="card" style={{
+      <div className="card position-fixed" style={{
+        "right" : "5px",
         "text-align" : "center",
-        "margin" : "26px",
-        "float" : "right",
+        "margin-right" : "26px",
         "display" : "inline-block",
         "width" : "166px",
         "height" : "186px",
@@ -37,28 +37,22 @@ export default function ProductDetail() {
           </span>
       </div>
 
-{/* this is a new div that i try adding */}
-      <div className="d-flex justify-content-center flex-column">
 
-      <div className="container"
+
+      <div className="navbar-expand mx-auto fixed-top"
       style={{
-      "width" : "1440px",
-      "height" : "72px"}}>
-        <p className="mx-auto" style={{
-            "text-align" : "center",
-            "padding-top" : "23px",
-            "width" : "166px",
-            "height" : "27px",
-            "font-size" : "22px",
-            "font-weight" : "bold",
-            "letter-spacing" : "-0.3px",
-            "color" : "#013878"}}>
-            CryptoBookStore
-        </p>
-      </div>
+      "background-color": "#fbfbfb",
+      "height" : "72px",
+      "margin" : "auto",
+      "text-align" : "center",
+      "padding-top" : "23px",
+      "font-size" : "22px",
+      "font-weight" : "bold",
+      "letter-spacing" : "-0.3px",
+      "color" : "#013878"}}>CryptoBookStore</div>
 
 
-      <div id="bookInfo" className="container d-flex justify-content-center">
+      <div id="bookInfo" className="container d-flex justify-content-center" style={{"margin-top" : "100px"}}>
         <div>
           <img className="d-flex flex-wrap"
                 id="bookImage" 
@@ -93,11 +87,11 @@ export default function ProductDetail() {
                       "margin-right" : "1em",
                       "width" : "120px",
                       "height" : "18px"}}>
-                      <img src="img/filled-star-s.png" srcset="img/filled-star-s@2x.png, img/filled-star-s@3x.png"></img>
-                      <img src="img/filled-star-s.png" srcset="img/filled-star-s@2x.png, img/filled-star-s@3x.png"></img>
-                      <img src="img/filled-star-s.png" srcset="img/filled-star-s@2x.png, img/filled-star-s@3x.png"></img>
-                      <img src="img/filled-star-s.png" srcset="img/filled-star-s@2x.png, img/filled-star-s@3x.png"></img>
-                      <img src="img/empty-star-s.png" srcset="img/empty-star-s@2x.png, img/empty-star-s@3x.png"></img>
+                      <img style={{"height" : "18px"}} src="img/filled-star-s.png" srcset="img/filled-star-s@2x.png, img/filled-star-s@3x.png"></img>
+                      <img style={{"height" : "18px"}} src="img/filled-star-s.png" srcset="img/filled-star-s@2x.png, img/filled-star-s@3x.png"></img>
+                      <img style={{"height" : "18px"}} src="img/filled-star-s.png" srcset="img/filled-star-s@2x.png, img/filled-star-s@3x.png"></img>
+                      <img style={{"height" : "18px"}} src="img/filled-star-s.png" srcset="img/filled-star-s@2x.png, img/filled-star-s@3x.png"></img>
+                      <img style={{"height" : "18px"}} src="img/empty-star-s.png" srcset="img/empty-star-s@2x.png, img/empty-star-s@3x.png"></img>
                       </span>
                 <span id="numericRating"
                       style={{
@@ -128,8 +122,8 @@ export default function ProductDetail() {
       </div>
 
 
-      <div id="youRate" className="container justify-content-center d-flex flex-column" 
-            style={{"width" : "1440px", "height" : "385px"}}>
+      <div id="youRate" className="d-flex flex-column mx-auto justify-content-center" 
+            style={{"height" : "385px", "background-color" : "#fbfbfb"}}>
         <p className="d-flex justify-content-center"
             style={{
               "font-size": "20px",
@@ -141,8 +135,9 @@ export default function ProductDetail() {
         <img src="img/empty-star-s.png" srcset="img/empty-star-s@2x.png, img/empty-star-s@3x.png"></img>
         <img src="img/empty-star-s.png" srcset="img/empty-star-s@2x.png, img/empty-star-s@3x.png"></img>
         </p>
-        <p className="d-inline-flex mx-auto">
-          <textarea type="text"
+        <p className="mx-auto">
+        {/* need to move placeholder to top */}
+          <input type="text"
                   style={{
                     "width" : "626px",
                     "height" : "136px",
@@ -150,7 +145,7 @@ export default function ProductDetail() {
                     "border" : "solid 1px #bdbdbd",
                     "background-color" : "#ffffff"}}
                   placeholder="你的心得...">
-          </textarea>
+          </input>
         </p>
         <input className="btn btn-primary align-self-center" type="submit" value="送出" 
                 style={{
@@ -160,7 +155,7 @@ export default function ProductDetail() {
                   "border-radius" : "3px"}}></input>
       </div>
 
-      <div id="allReviews" className="container">
+      <div id="allReviews" className="container pt-3">
 
       <div id="user1" className="container"
         style={{
@@ -174,11 +169,11 @@ export default function ProductDetail() {
           "background-color" : "#ffffff"}}>
 
         <p id="userStarRating">
-        <img src="img/filled-star-s.png" srcset="img/filled-star-s@2x.png, img/filled-star-s@3x.png"></img>
-        <img src="img/filled-star-s.png" srcset="img/filled-star-s@2x.png, img/filled-star-s@3x.png"></img>
-        <img src="img/filled-star-s.png" srcset="img/filled-star-s@2x.png, img/filled-star-s@3x.png"></img>
-        <img src="img/filled-star-s.png" srcset="img/filled-star-s@2x.png, img/filled-star-s@3x.png"></img>
-        <img src="img/empty-star-s.png" srcset="img/empty-star-s@2x.png, img/empty-star-s@3x.png"></img>
+        <img style={{"height" : "12px"}} src="img/filled-star-s.png" srcset="img/filled-star-s@2x.png, img/filled-star-s@3x.png"></img>
+        <img style={{"height" : "12px"}} src="img/filled-star-s.png" srcset="img/filled-star-s@2x.png, img/filled-star-s@3x.png"></img>
+        <img style={{"height" : "12px"}} src="img/filled-star-s.png" srcset="img/filled-star-s@2x.png, img/filled-star-s@3x.png"></img>
+        <img style={{"height" : "12px"}} src="img/filled-star-s.png" srcset="img/filled-star-s@2x.png, img/filled-star-s@3x.png"></img>
+        <img style={{"height" : "12px"}} src="img/empty-star-s.png" srcset="img/empty-star-s@2x.png, img/empty-star-s@3x.png"></img>
         </p>
 
         <span style={{
@@ -195,6 +190,7 @@ export default function ProductDetail() {
             "margin-top" : "36px",
             "font-weight": "500",
             "color" : "#0b0b0b"}}>
+            <img src="img/oval.png" srcset="img/oval@2x.png, img/oval@3x.png" style={{"width" : "25px", "height" : "25px", "margin-right" : "7px"}}></img>
             Brady Huang
         </p>
 
@@ -213,11 +209,11 @@ export default function ProductDetail() {
           "background-color" : "#ffffff"}}>
 
         <p id="userStarRating">
-        <img src="img/filled-star-s.png" srcset="img/filled-star-s@2x.png, img/filled-star-s@3x.png"></img>
-        <img src="img/filled-star-s.png" srcset="img/filled-star-s@2x.png, img/filled-star-s@3x.png"></img>
-        <img src="img/filled-star-s.png" srcset="img/filled-star-s@2x.png, img/filled-star-s@3x.png"></img>
-        <img src="img/filled-star-s.png" srcset="img/filled-star-s@2x.png, img/filled-star-s@3x.png"></img>
-        <img src="img/filled-star-s.png" srcset="img/filled-star-s@2x.png, img/filled-star-s@3x.png"></img>
+        <img style={{"height" : "12px"}} src="img/filled-star-s.png" srcset="img/filled-star-s@2x.png, img/filled-star-s@3x.png"></img>
+        <img style={{"height" : "12px"}} src="img/filled-star-s.png" srcset="img/filled-star-s@2x.png, img/filled-star-s@3x.png"></img>
+        <img style={{"height" : "12px"}} src="img/filled-star-s.png" srcset="img/filled-star-s@2x.png, img/filled-star-s@3x.png"></img>
+        <img style={{"height" : "12px"}} src="img/filled-star-s.png" srcset="img/filled-star-s@2x.png, img/filled-star-s@3x.png"></img>
+        <img style={{"height" : "12px"}} src="img/filled-star-s.png" srcset="img/filled-star-s@2x.png, img/filled-star-s@3x.png"></img>
         </p>
 
         <span style={{
@@ -237,16 +233,13 @@ export default function ProductDetail() {
             "margin-top" : "36px",
             "font-weight": "500",
             "color" : "#0b0b0b"}}>
+            <img src="img/oval.png" srcset="img/oval@2x.png, img/oval@3x.png" style={{"width" : "25px", "height" : "25px", "margin-right" : "7px"}}></img>
             Jimmy Who
         </p>
 
       </div>
 
       </div>
-
-      </div>
-
-
 
     </React.Fragment>
   )
