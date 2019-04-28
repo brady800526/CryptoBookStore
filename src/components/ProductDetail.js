@@ -37,7 +37,8 @@ export default function ProductDetail() {
           </span>
       </div>
 
-
+{/* this is a new div that i try adding */}
+      <div className="d-flex justify-content-center flex-column">
 
       <div className="container"
       style={{
@@ -57,10 +58,7 @@ export default function ProductDetail() {
       </div>
 
 
-      <div id="bookInfo" className="container d-flex"
-      style={{
-        "margin" : "43px 343px"
-      }}>
+      <div id="bookInfo" className="container d-flex justify-content-center">
         <div>
           <img className="d-flex flex-wrap"
                 id="bookImage" 
@@ -84,8 +82,6 @@ export default function ProductDetail() {
 
               <p id="bookTitle" className="align-self-start"
                   style={{
-                  // "width" : "432px",
-                  // "height" : "60px",
                   "font-size" : "22px",
                   "font-weight" : "600"}}>
                   直島誕生：地區再生×企業行銷×藝術實驗，
@@ -243,6 +239,8 @@ export default function ProductDetail() {
             "color" : "#0b0b0b"}}>
             Jimmy Who
         </p>
+
+      </div>
 
       </div>
 
