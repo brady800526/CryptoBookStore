@@ -135,12 +135,20 @@ export default function ProductDetail() {
       </div>
 
       {/* user comment */}
-      <div className="container justify-content-center mx-auto bg-warning">
+      <div className="container justify-content-center mx-auto">
         <div className="container">
           <div
-            className="col-4 row"
+            id="user1"
+            className="container"
             style={{
-              fontSize: "1rem"
+              "font-size": "16px",
+              padding: "25px 34px",
+              width: "754px",
+              height: "234px",
+              "border-radius": "4px",
+              "box-shadow": "0 2px 14px 0 rgba(0, 0, 0, 0.08)",
+              border: "solid 1px #e2e2e2",
+              "background-color": "#ffffff"
             }}
           >
             <p>
@@ -176,62 +184,61 @@ export default function ProductDetail() {
               Brady Huang
             </p>
           </div>
-          </div>
+        </div>
 
-          <p />
-          <div
-            id="user2"
-            className="container"
+        <p />
+        <div
+          id="user2"
+          className="container"
+          style={{
+            "font-size": "16px",
+            padding: "25px 34px",
+            width: "754px",
+            height: "480px",
+            "border-radius": "4px",
+            "box-shadow": "0 2px 14px 0 rgba(0, 0, 0, 0.08)",
+            border: "solid 1px #e2e2e2",
+            "background-color": "#ffffff"
+          }}
+        >
+          <p>
+            <Star />
+            <Star />
+            <Star />
+            <Star />
+            <MuteStar />
+          </p>
+
+          <span
             style={{
-              "font-size": "16px",
-              padding: "25px 34px",
-              width: "754px",
-              height: "480px",
-              "border-radius": "4px",
-              "box-shadow": "0 2px 14px 0 rgba(0, 0, 0, 0.08)",
-              border: "solid 1px #e2e2e2",
-              "background-color": "#ffffff"
+              width: "686px",
+              height: "96px",
+              "line-height": "1.5",
+              color: "#373737"
             }}
           >
             <p>
-              <Star />
-              <Star />
-              <Star />
-              <Star />
-              <MuteStar />
+              邊大道子特腦使滿老媽其直國上走該正，院原於它市成而友月師……院理國說正人在花外除男：直會苦是問上名使。都形用來足用有顧立我。
             </p>
-
-            <span
-              style={{
-                width: "686px",
-                height: "96px",
-                "line-height": "1.5",
-                color: "#373737"
-              }}
-            >
-              <p>
-                邊大道子特腦使滿老媽其直國上走該正，院原於它市成而友月師……院理國說正人在花外除男：直會苦是問上名使。都形用來足用有顧立我。
-              </p>
-              <p />
-              <p>
-                比禮初行裡過推了之火葉重一生著形，知去人年工之、論木民的查出動們般少沒科上大手中易香的們我現時與樣子合樹營而馬送們們；門黨發成習解名自以，正雖業，結力定話、學看能銀無英的回保；黃成接面。生由我目路準行戲提。化養車看前個工，國還感好成員麼企取調還果；起的它教大入的麼、可為則水省親、長然己當是我他了產出花雲。長驚岸義其己達山都念我那界看、一價和、有學技考外正文議智想生知有化提差子一過，進童全通國而加他前，的會住著？的我也事放位話？難酒那臺大次衣集孩聽於升樣西看終種老子教業個地……們多奇取。的眼毒和沒難創斯他？地一只指！級個美前節對人超校現流上信營說問父人在保動全是度面就新山學精一巴酒象常？以我然爾只的面知能，如新友重門小然長傳生時一一告平人的。黨和裝氣設是下……樣響做生的排高子嚴言發須壓，二樣又濟、雨講時統品收觀數怕來園紀中管，班麼空到目朋因。
-              </p>
-              <p />
-              <p>文是率好的的青與名白還來道弟不一的朋學樂成多受熱見查。</p>
-            </span>
-
-            <p
-              style={{
-                "margin-top": "36px",
-                "font-weight": "500",
-                color: "#0b0b0b"
-              }}
-            >
-              Jimmy Who
+            <p />
+            <p>
+              比禮初行裡過推了之火葉重一生著形，知去人年工之、論木民的查出動們般少沒科上大手中易香的們我現時與樣子合樹營而馬送們們；門黨發成習解名自以，正雖業，結力定話、學看能銀無英的回保；黃成接面。生由我目路準行戲提。化養車看前個工，國還感好成員麼企取調還果；起的它教大入的麼、可為則水省親、長然己當是我他了產出花雲。長驚岸義其己達山都念我那界看、一價和、有學技考外正文議智想生知有化提差子一過，進童全通國而加他前，的會住著？的我也事放位話？難酒那臺大次衣集孩聽於升樣西看終種老子教業個地……們多奇取。的眼毒和沒難創斯他？地一只指！級個美前節對人超校現流上信營說問父人在保動全是度面就新山學精一巴酒象常？以我然爾只的面知能，如新友重門小然長傳生時一一告平人的。黨和裝氣設是下……樣響做生的排高子嚴言發須壓，二樣又濟、雨講時統品收觀數怕來園紀中管，班麼空到目朋因。
             </p>
-          </div>
+            <p />
+            <p>文是率好的的青與名白還來道弟不一的朋學樂成多受熱見查。</p>
+          </span>
+
+          <p
+            style={{
+              "margin-top": "36px",
+              "font-weight": "500",
+              color: "#0b0b0b"
+            }}
+          >
+            Jimmy Who
+          </p>
         </div>
-
+      </div>
     </React.Fragment>
   );
 }
